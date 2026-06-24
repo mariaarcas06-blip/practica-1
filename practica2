@@ -1,0 +1,18 @@
+clave_correcto = 9876
+contador_intentos = 0
+max_intentos = 3
+
+while contador_intentos < max_intentos: 
+    clave= int(input("ingrese su clave: "))
+
+    if clave== clave_correcto:
+        print ("caja fuerte abierta")
+        break
+    else:
+        print ("clave incorrecto")
+        contador_intentos +=1 
+
+if contador_intentos==max_intentos:
+    print ("la caja fuerte quedo bloqueada")
+
+    
